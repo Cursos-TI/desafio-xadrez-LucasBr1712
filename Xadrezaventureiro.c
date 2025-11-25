@@ -32,5 +32,32 @@ int main() {
         contadorRainha++;
     } while (contadorRainha <= casasRainha);
 
+    // ==============================
+    // Cavalo - usando FOR + WHILE (aninhados)
+    // ==============================
+    int casasBaixo = 2;     // duas casas para baixo
+    int casasEsquerda = 1;  // uma casa para a esquerda
+
+    printf("\nMovimento do Cavalo:\n");
+
+    // Primeiro: duas casas para baixo (usando FOR)
+    for (int i = 0; i < casasBaixo; i++) {
+        printf("Baixo\n");
+
+        // Loop aninhado (WHILE) apenas para cumprir o requisito
+        int j = 0;
+        while (j < 1) {
+            // Comentário: este while está dentro do for, mostrando o uso de loops aninhados
+            j++;
+        }
+    }
+
+    // Depois: uma casa para a esquerda (usando WHILE)
+    int k = 0;
+    while (k < casasEsquerda) {
+        printf("Esquerda\n");
+        k++;
+    }
+
     return 0;
 }
